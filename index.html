@@ -117,6 +117,19 @@
             
         }
         
+        .subtitulo{
+            display: block;
+            
+            color: #7B141E;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        
+        
         .hero-text h1 { 
             font-family: 'Playfair Display', serif; 
             font-size: 50px; 
@@ -144,6 +157,8 @@
             flex; 
             justify-content: flex-end; 
             position: relative;
+            max-width: 100%;
+            border-radius: 0;
             }
             
         .hero-img::after {
@@ -152,6 +167,7 @@
             bottom: 0; left: 0; right: 0;
             height: 120px;
             background: linear-gradient(to bottom, transparent, #FDF1F0);
+            display: none;
         }
         .hero-img img { 
             width: 100%; 
@@ -245,15 +261,12 @@
             min-width: 300px;
         }
         
-        .fotoPerfilSecundaria img{
-            width: 100%;
-            max-width: 400px;
-            font-family: 'Playfair Display', serif;
-            color: #7B141E;
-            font-size: 28px;
-            margin-bottom: 20px;
-            
-        }
+.fotoPerfilSecundaria img {
+    width: 100%;
+    max-width: 400px;
+    display: block; /* Garante um melhor alinhamento */
+    margin-bottom: 20px;
+}
         
         .textoPerfilSecundario p{
             line-height: 1.8;
@@ -280,7 +293,8 @@
             font-family: 'Playfair Display', serif;
             font-size: 32px;
             color:#7B141E;
-            margin-bottom: 20px;
+            margin: 20px;
+            
             
         }
         
@@ -358,17 +372,14 @@
         flex-direction: column;
         text-align: center;
     }
-    .fotoPerfilSecundaria img {
-        box-shadow: 10px 10px 0px #FDDFDD;
-    }
+   .fotoPerfilSecundaria img{
+    box-shadow:none;
+}
             
         }
         
-        
-        
-        
-        
     </style>
+    
 </head>
 <body>
 
@@ -402,6 +413,7 @@
             <div class="hero-text">
                 <h2>Bem vinda, amada!</h2>
                 <h1>Mariana virtudes</h1>
+                <p class="subtitulo">Escritora</p>
             </div>
             <div class="hero-img">
                 <img src="mari.jpg" alt="Mariana Jamilly">
@@ -416,7 +428,7 @@
                         <img src="conexaoFoto.jpg" alt="foto">
                     </div>
                     <div class="textoPerfilSecundario">
-                        <h2>Do Cansaço ao Florescer: Você Não Precisa Carregar o Mundo Sozinha.</h2>
+                        <h2>Você Não Precisa Carregar o Mundo Sozinha.</h2>
                         <p>Eu sei como é a sensação de estar cercada de pessoas, mas ainda assim sentir que ninguém realmente entende o que se passa no silêncio da sua alma. Sei o que é tentar dar conta de tudo, das expectativas, da rotina, dos papéis que te impõem e, ao final do dia, sentir um vazio que nenhuma conquista parece preencher.
 </p>
 <br>
@@ -432,7 +444,7 @@
     
     <section class="bio-section" id="sobre">
         <div class="container bio-content">
-            <h2>Conheça a minha história</h2>
+            <h2>Conheça um pouco da minha história</h2>
             <br>
             <p>
                 <b>"Dizem que construir algo novo dá trabalho, mas ninguém te conta o quão libertador é ver os antigos escombros virarem jardim."</b>
@@ -476,11 +488,23 @@ Eu descobri que a fé não é um sentimento estático, e as virtudes não são e
     
         <section class="grupoDevocional">
         <div class="containerDevocional">
-            <h2>Grupo de Devocional Diário</h2>
-            <p>Comece suas manhãs fortalecendo sua fé e sua identidade em Cristo. Participe do nosso grupo de mensagens diárias.
+            <h2>🍀Jardim das virtuosas🍀</h2>
+            <p>
+
+Sabemos que a rotina pode ser agitada, e às vezes tudo o que precisamos é de um fôlego, de uma palavra que nos lembre de quem somos em Deus.
+<br><br>
+O Jardim das Virtuosas nasceu para ser esse respiro no seu celular. Não é apenas mais um grupo de mensagens, é uma comunidade de mulheres reais, que caminham juntas, partilham a fé e florescem no seu próprio tempo.
+<br><br>
+Ao entrar, você encontrará:
+<br><br>
+🌷Carinho diário: Devocionais e reflexões para acalmar o coração e dar direção.
+<br><br>
+🌷Caminhada junta: Um espaço para fortalecer sua identidade e propósito.
+<br><br>
+🌷 Proximidade: encontros presenciais
 
 </p>
-            <a href="https://chat.whatsapp.com/DVMMuTtbUU4Jst8Q3HMu8S" target="_blank" class="btn whatsapp-btn">Entre agora</a>
+            <a href="https://chat.whatsapp.com/DVMMuTtbUU4Jst8Q3HMu8S" target="_blank" class="btn whatsapp-btn">Quero Fazer Parte</a>
         </div>
     </section>
 
