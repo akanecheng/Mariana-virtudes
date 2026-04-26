@@ -59,7 +59,11 @@
             line-height: 1;
         }
 
-        .logo span { display: block; font-size: 11px; font-family: 'Poppins'; font-weight: 300; }
+        .logo span { 
+            display: block; 
+            font-size: 11px; font-family: 'Poppins'; font-weight: 300; 
+            
+        }
 
         .nav-menu { 
             display: flex; 
@@ -97,21 +101,25 @@
         .hero {
             background: #FDF1F0;
             position: relative;
-            padding-top: 40px;
+            padding-top: 10px;
         }
 
         .hero-content { 
         display: flex; 
         align-items: center; 
         justify-content: space-between; 
-        gap: 20px; }
+        gap: 20px;
+        }
+        
         .hero-text { 
             flex: 1; 
-            z-index: 2; }
+            z-index: 2; 
+            
+        }
         
         .hero-text h1 { 
             font-family: 'Playfair Display', serif; 
-            font-size: 45px; 
+            font-size: 50px; 
             color: #7B141E; 
             margin-bottom: 10px; 
             
@@ -147,13 +155,33 @@
         }
         .hero-img img { 
             width: 100%; 
-            max-width: 480px; height: auto; display: block; }
+            max-width: 480px; 
+            height: auto; 
+            display: block; }
 
         /* BIOGRAFIA */
-        .bio-section { padding: 80px 0; text-align: center; }
-        .bio-content { max-width: 800px; margin: 0 auto; }
-        .bio-content h2 { font-family: 'Playfair Display', serif; font-size: 32px; color: #7B141E; margin-bottom: 20px; }
-        .bio-content p { font-size: 16px; line-height: 1.8; margin-bottom: 25px; color: #555; }
+        .bio-section { 
+            padding: 40px 0; 
+            text-align: center; 
+            
+        }
+        
+        .bio-content { 
+            max-width: 800px; 
+        margin: 0 auto; 
+            
+        }
+        
+        .bio-content h2 { 
+     font-family: 'Playfair Display',
+        serif; 
+        font-size: 32px; 
+        color: #7B141E; 
+        margin-bottom: 20px; }
+        
+        .bio-content p { font-size: 16px; line-height: 1.8; margin-bottom: 25px; color: #555; 
+            font-family: 'Playfair Display', serif;
+        }
 
         /* SEÇÃO LIVRO */
         .sobre-livro { 
@@ -193,21 +221,121 @@
         .social-item { text-align: center; color: #7B141E; transition: 0.3s; }
         .social-item:hover { color: #D67F79; }
         .social-item b { display: block; font-size: 14px; margin-top: 5px; }
+        
+       .secaoFotoTexto{
+            padding:60px 0;
+            background-color:#fff ;
+        }
+        
+        .secaoFotoTexto .FlexContainer {
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        
+           .secaoFotoTexto h2{
+               font-family:'Playfair Display', serif;
+            color: #7B141E; ;
+           }
+        
+        .fotoPerfilSecundaria{
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .fotoPerfilSecundaria img{
+            width: 100%;
+            max-width: 400px;
+            font-family: 'Playfair Display', serif;
+            color: #7B141E;
+            font-size: 28px;
+            margin-bottom: 20px;
+            
+        }
+        
+        .textoPerfilSecundario p{
+            line-height: 1.8;
+            color: #555;
+            text-align: center;
+            margin: 10px;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .grupoDevocional{
+            padding: 80px 20px;
+            background-color: #FDF1F0;
+            text-align: center;
+            border-top: 1px solid #FDDFDD;
+        }
+        
+        .containerDevocional{
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .containerDevocional h2{
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            color:#7B141E;
+            margin-bottom: 20px;
+            
+        }
+        
+        .containerDevocional p{
+            margin: 10px;
+        line-height: 1.6;
+        color: #4A4A4A;
+        }
+      
+      .whatsapp-btn{
+   margin-top: 20px;
+}
+      
+      
 
         /* RESPONSIVIDADE */
         @media (max-width: 768px) {
-            .hero-content { flex-direction: column; text-align: center; }
-            .hero-img { order: 1; width: 100%; justify-content: center; }
-            .hero-text { order: 2; padding: 30px 10px; }
-            .hero-text h1 { font-size: 32px; }
+            .hero-content { 
+                flex-direction: column; 
+                text-align: center;
+            }
+            .hero-img { 
+                order: 1; 
+                width: 100%; 
+                justify-content: center; }
+            .hero-text { 
+                order: 2; 
+                padding: 30px 10px; 
+                
+            }
+            .hero-text h1 { 
+                font-size: clamp( 2rem, 6vh, 32px);
+                }
             
-            .card-livro { flex-direction: column; text-align: center; }
-            .book-img { width: 180px; }
+            .card-livro { 
+                flex-direction: column; 
+                text-align: center;
+            }
+            .book-img { 
+                width: 180px;
+                }
             
-            .nav-menu { display: none; }
-            .social-links { flex-direction: column; gap: 20px; }
+            .nav-menu { 
+                display: none;
+                }
+            .social-links { 
+                flex-direction: column; 
+                gap: 20px; 
+                
+            }
             
-            .menu-toggle { display: flex; } /* Mostra o botão no celular */
+            .menu-toggle { 
+                display: 
+                flex;
+                } /* Mostra o botão no celular */
 
             .nav-menu {
                 display: none; /* Esconde por padrão no celular */
@@ -225,6 +353,15 @@
             .nav-menu.active {
                 display: flex;
             }
+            
+            .secaoFotoTexto  .FlexContainer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .fotoPerfilSecundaria img {
+        box-shadow: 10px 10px 0px #FDDFDD;
+    }
+            
         }
         
         
@@ -263,30 +400,56 @@
     <section class="hero" id="inicio">
         <div class="container hero-content">
             <div class="hero-text">
-                <h2>Bem vindas, amadas!</h2>
+                <h2>Bem vinda, amada!</h2>
                 <h1>Mariana virtudes</h1>
-                <h4>Escritora</h4>
-                <br>
-                <p>"Ajudando você a romper a estagnação e florescer em virtudes no caminho com o Criador."</p>
-                <br>
-                <a href="#sobre" class="btn">Conheça minha história</a>
             </div>
-            
             <div class="hero-img">
                 <img src="mari.jpg" alt="Mariana Jamilly">
             </div>
         </div>
     </section>
-
+    
+    
+                <section class="secaoFotoTexto">
+                <div class="FlexContainer">
+                    <div class="fotoPerfilSecundaria">
+                        <img src="conexaoFoto.jpg" alt="foto">
+                    </div>
+                    <div class="textoPerfilSecundario">
+                        <h2>Do Cansaço ao Florescer: Você Não Precisa Carregar o Mundo Sozinha.</h2>
+                        <p>Eu sei como é a sensação de estar cercada de pessoas, mas ainda assim sentir que ninguém realmente entende o que se passa no silêncio da sua alma. Sei o que é tentar dar conta de tudo, das expectativas, da rotina, dos papéis que te impõem e, ao final do dia, sentir um vazio que nenhuma conquista parece preencher.
+</p>
+<br>
+<p>Muitas vezes, a gente se perde tentando ser a mulher que o mundo exige, e acaba esquecendo da mulher que Deus planejou. Você talvez sinta que está apenas sobrevivendo, "secando" por dentro, enquanto espera por uma estação que nunca chega.</p>
+<br>
+<p>Mas quero te dizer algo que mudou a minha vida: você não foi feita para carregar o peso do mundo, você foi feita para ser carregada por Aquele que venceu o mundo. Encontrar-se em Cristo não é sobre seguir regras, mas sobre descobrir que o seu deserto pode, sim, florescer.</p>
+                    </div>
+                </div>
+            </section>
+    
+    
+    
+    
     <section class="bio-section" id="sobre">
         <div class="container bio-content">
-            <h2>Sobre Mim</h2>
+            <h2>Conheça a minha história</h2>
+            <br>
             <p>
-                Olá, eu sou a Mariana Jamilly. Além de coautora, sou uma mulher apaixonada por ver outras mulheres florescerem em sua identidade real. Minha missão é guiar você em uma jornada de autoconhecimento e fé, ajudando a identificar os bloqueios que impedem o seu crescimento espiritual e emocional.
+                <b>"Dizem que construir algo novo dá trabalho, mas ninguém te conta o quão libertador é ver os antigos escombros virarem jardim."</b>
             </p>
             <p>
-                Acredito que cada virtude cultivada é um passo mais próximo do propósito que o Criador desenhou para nós. Aqui, compartilhamos vida, aprendizado e transformação.
+                Olá, eu sou Mariana Jamilly. Sou escritora, mas, antes disso, sou uma mulher que decidiu não aceitar menos do que a plenitude que Jesus prometeu.
             </p>
+            
+            <p>Minha jornada de evolução pessoal não foi apenas sobre "mudar hábitos", foi sobre uma metamorfose real que curou meu interior e reconstruiu todos os meus relacionamentos.</p>
+            
+            <p>Eu vivi na pele esse processo de olhar para as ruínas e, com a ajuda dele, plantar algo novo.
+Eu descobri que a fé não é um sentimento estático, e as virtudes não são enfeites: elas são as chaves mestras para a vida que você sempre sonhou, mas não sabia como acessar.</p>
+
+<p>Tudo o que eu vivi, as dores, os processos e as vitórias, não foi para ficar guardado em mim. Foi para que eu pudesse ser um mapa para a sua própria transformação. Eu não quero apenas te ver de longe, eu te convido a caminhar ao meu lado.</p>
+
+<p>Vamos descobrir, juntas, o que acontece quando uma mulher decide finalmente florescer em Cristo?</p>
+            
             <hr style="border: 0; height: 1px; background: #D67F79; width: 50px; margin: 0 auto;">
         </div>
     </section>
@@ -305,11 +468,22 @@
                         Descobrimos que, quando compartilhamos nossas feridas curadas, elas se tornam mapas de liberdade para outras irmãs. Este projeto é a prova de que Deus usa a nossa história para ativar a coragem em quem está ao nosso lado.
                     </p>
                     <br>
-                    <a href="#" class="btn">Garantir meu exemplar</a>
+                    <a href="https://wa.me/qr/METOJCZBUMNAA1" class="btn">Garantir meu exemplar</a>
                 </div>
             </div>
         </div>
     </section>
+    
+        <section class="grupoDevocional">
+        <div class="containerDevocional">
+            <h2>Grupo de Devocional Diário</h2>
+            <p>Comece suas manhãs fortalecendo sua fé e sua identidade em Cristo. Participe do nosso grupo de mensagens diárias.
+
+</p>
+            <a href="https://chat.whatsapp.com/DVMMuTtbUU4Jst8Q3HMu8S" target="_blank" class="btn whatsapp-btn">Entre agora</a>
+        </div>
+    </section>
+
 
     <section class="grupo-vip">
         <div class="container vip-container">

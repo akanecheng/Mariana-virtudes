@@ -4,31 +4,123 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet">
+  
   <title></title>
   <style>
-     * { margin: 0; padding: 0; box-sizing: border-box; }
+     * { 
+         margin: 0; 
+         padding: 0; 
+         box-sizing: border-box;
+         }
 
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #FDF1F0;
-            color: #4A4A4A;
+           background:linear-gradient(180deg,#FDF1F0 0%, #F9E4E1 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 90px 20px 30px;
+            min-height: 100vh;
+            
         }
         
-        h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 39px;
-            color: #7B141E;
-            margin-bottom: 10px;
+        .PoemaCard{
+            width: min(90% 900px);
+            background:#fffaf8;
+border:1px solid #efd5d2;
+            max-width: 800px;
+            width:100%;
+            padding: 60px 50px;
+            border-radius: 28px;
+            box-shadow: 0 8px 30px rgba(0,0,0,.08);
             text-align: center;
-            padding: 50px;
+        }
+    
+        
+       .PoemaCard h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw,3rem);
+            color: #7B141E;
+            margin-bottom: 35px;
+            text-align: center;
+            margin: 0 auto 35px;
         }
 
-        p {
-            font-style: italic;
-            color: #D67F79;
+       .PoemaCard p {
+            font-family: 'Playfair Display',serif;
             text-align: center;
+            font-size:clamp(1.15rem,3vw,1.5rem);
+            line-height: 2.2;
+            font-style: italic;
+            color:#5d5555
         }
         
+        /*responsividade*/
+        
+        .voltar{
+            position: fixed;
+            top:25px;
+            left: 25px;
+            text-decoration: none;
+            background:#D67F79;
+            color: white;
+            padding: 12px 22px;
+            border-radius: 30px;
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(0,0,0,.08);
+            transition: .3s;
+            z-index: 1000;
+            
+        }
+        
+        .voltar:hover{
+            background:#B75B56;
+            transform:translateY(-2px)
+            
+        }
+        
+        @media(max-width:600px){
+            .voltar{
+                top: 15px;
+                left: 15px;
+                padding: 10px 18px;
+                font-size: 14px;
+            }
+            .PoemaCard{
+                padding: 40px 25px;
+                border-radius: 20px;
+            }
+
+            .PoemaCard p{
+                line-height: 2;
+            }
+            
+            .assinatura{
+                font-size: 1.2rem;
+                margin-top: 35px;
+            }
+            
+        }
+        
+        .assinatura{
+            margin-top: 20px;
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+            font-size: 1.4rem;
+            color:#7B141E;
+            text-align: right;
+            opacity: .85;
+        }
+        
+        .decoracao{
+            margin-bottom: 30px;
+        }
         
   </style>
   
@@ -38,14 +130,50 @@
 
 <body>
   
+  <section class="PoemaCard">
+        <h1>Caminhando com ele</h1>
+          <div class="decoracao">
+        <p>Caminhando com Ele
+
+Sozinha, mas não solitária, eu percorro o caminho.
+<br>
+A cada passo, sinto sua mão abençoada a me guardar.
+<br>
+Sou sua filha amada, sou delicada e sou forte,
+<br>
+Na presença do Eterno, encontro meu norte.
+<br>
+Há paz no silêncio, há consolo com Ele.<br>
+Com Cristo ao meu lado, nunca estou solitária.<br>
+Meu coração bate na doce harmonia
+De saber que sou dele, e Ele é minha alegria.
+<br>
+A cada manhã, um novo recomeço,
+Com o Senhor, encontro o amor que mereço.<br>
+Meu espírito dança, minha alma sorri,
+Na presença do Eterno, sou tudo o que sempre quis.
+<br>
+E assim sigo em frente, livre, em paz e verdade,<br>
+Com Ele, sou plena, sou pura liberdade.<br>
+Na sua presença, eu vivo, floresço e cresço,<br>
+Com Cristo ao meu lado, de nada tenho falta.<br>
+
+
+
+
+</p>
   
-  <h1>O que o silêncio ditou</h1>
+  </div>
   
-  <p>Sozinha, mas não solitária, eu percorro o caminho.<br>
-A cada passo, sinto sua mão abençoada a me guardar.<br>
-Sou sua filha amada, sou delicada e sou forte,<br>
-Na presença do Eterno, encontro meu norte.</p>
+  <div class="assinatura">
+      — Mariana Virtudes
+  </div>
+
+  </section>
   
+
+
+<a href="poemas.html" class="voltar">← Voltar para poemas</a>
   
 </body>
 

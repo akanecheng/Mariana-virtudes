@@ -22,6 +22,7 @@
 
         /* HEADER DA PÁGINA DE POEMAS */
         .poemas-header {
+            
             text-align: center;
             padding: 60px 0;
         }
@@ -36,12 +37,16 @@
         .poemas-header p {
             font-style: italic;
             color: #D67F79;
+            max-height: 650px;
+            margin:0 auto;
+            padding: 0 10px;
+            line-height: 1.8;
         }
 
         /* GRID DE CARDS */
         .poemas-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 25px;
             margin-top: 40px;
         }
@@ -58,6 +63,7 @@
             display: flex;
             flex-direction: column;
             border: 1px solid transparent;
+            height: 100%;
         }
 
         .card-poema:hover {
@@ -100,7 +106,21 @@
         }
 
         @media (max-width: 600px) {
-            .poemas-header h1 { font-size: 32px; }
+            .poemas-header h1 { 
+              font-size: clamp(2rem, 5vw, 42px);
+              }
+              
+              .container{
+                  padding: 30px 18px;
+              }
+              
+              .poemas-header{
+                  padding: 40px 0;
+              }
+              
+              .card-poema{
+                  padding: 25px;
+              }
         }
     </style>
 </head>
@@ -117,14 +137,12 @@
         <div class="poemas-grid">
             
             <a href="poema1.html" class="card-poema">
-                <h3>O que o silêncio  ditou</h3>
+                <h3>Caminhando com ele</h3>
                 <p>"Sozinha, mas não solitária, eu percorro o caminho.
 A cada passo, sinto sua mão abençoada a me guardar"</p>
                 <span class="ler-mais">Ler Poema Completo →</span>
             </a>
 
-            
-            </a>
 
         </div>
 
